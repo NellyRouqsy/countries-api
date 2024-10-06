@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    font-family: Nunito Sans;
+}
+#navbar{
+    height: 90px;
+    padding: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    h1{
+        font-size:30px;
+        font-weight: 900px;
+    }
+}
+.navleft{
+    width: 100px;
+    align-items: center;
+    align-content: center;
+    font-size:15px;
+    font-weight:700;
+    #darkMode{
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        img{
+            width: 15px;
+        }
+    }
+    #lightMode{
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        img{
+            width: 15px;
+        }
+    }
+}
+.searching{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    .selectRegion{
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+        border: none;
+        font-size: 13px;
+        input:focus{
+            border: none;
+        }
+    }
+    #searchBox{
+        width: 450px;
+        height: 50px;
+    }
+}
+.search1{
+    align-items: center;
+    align-content: center;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    ::placeholder{
+        font-size: 20px;
+        margin-left: 50px;
+    }
+    input:focus{
+        outline: none;
+        border: none;
+        border-collapse: collapse;
+    }
+    input[placeholder]{
+        color:rgb(170,170,170);
+        font-size: larger;
+        border: none;
+    }
+    img{
+    position: relative;
+    left: 4px;
+    width: 40px;
+    height: 25px;
+    top: 4px;
+    }
+}
+.card{
+    width: 250px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+}
+.cards{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 60px;
+    border-radius: 5px;
+    font-weight: 700;
+    img{
+        
+        border-radius: 5px;
+        height: 150px;
+        margin: 0px auto;
+        object-fit: cover;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    }
+    h1{
+        line-height: 30px;
+        font-size: large;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-left: 30px;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    span{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .population{
+        margin-top: 30px;
+    }
+    p{
+        margin-left: 30px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+.whereInTheWorld{
+    cursor: pointer;
+}
